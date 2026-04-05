@@ -14,6 +14,7 @@
  * Network: true
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * Update URI: https://updates.wenpai.net
  */
 
 if (!defined("ABSPATH")) {
@@ -23,6 +24,9 @@ if (!defined("ABSPATH")) {
 define("WPMN_SWITCHER_VERSION", "1.0.3");
 define("WPMN_SWITCHER_PLUGIN_DIR", plugin_dir_path(__FILE__));
 define("WPMN_SWITCHER_PLUGIN_URL", plugin_dir_url(__FILE__));
+
+require_once WPMN_SWITCHER_PLUGIN_DIR . 'includes/class-wenpai-updater.php';
+new WenPai_Updater( plugin_basename( __FILE__ ), WPMN_SWITCHER_VERSION );
 
 class WP_MultiNetwork_Switcher
 {
