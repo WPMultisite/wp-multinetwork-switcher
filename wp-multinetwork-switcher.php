@@ -26,7 +26,7 @@ define("WPMN_SWITCHER_PLUGIN_DIR", plugin_dir_path(__FILE__));
 define("WPMN_SWITCHER_PLUGIN_URL", plugin_dir_url(__FILE__));
 
 require_once WPMN_SWITCHER_PLUGIN_DIR . 'includes/class-wenpai-updater.php';
-new WenPai_Updater( plugin_basename( __FILE__ ), WPMN_SWITCHER_VERSION );
+new WP_Multinetwork_Switcher_Updater( plugin_basename( __FILE__ ), WPMN_SWITCHER_VERSION );
 
 class WP_MultiNetwork_Switcher
 {

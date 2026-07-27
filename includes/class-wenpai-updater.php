@@ -20,11 +20,11 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-if ( class_exists( 'WenPai_Updater' ) ) {
+if ( class_exists( 'WP_Multinetwork_Switcher_Updater' ) ) {
     return;
 }
 
-class WenPai_Updater {
+class WP_Multinetwork_Switcher_Updater {
 
     /**
      * 更新器版本号。
